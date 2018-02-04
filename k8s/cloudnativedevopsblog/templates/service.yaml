@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.appName }}-service
+  namespace: {{ .Values.appName }}
+spec:
+  ports:
+  - port: {{ .Values.hugoPort }}
+    targetPort: {{ .Values.hugoPort }}
+    protocol: TCP
+  type: NodePort
+  selector:
+    app: {{ .Values.appName }}

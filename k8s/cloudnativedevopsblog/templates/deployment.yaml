@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: {{ .Values.appName }}
+  namespace: {{ .Values.appName }}
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.appName }}
+    spec:
+      containers:
+      - image: us.gcr.io/{{.Values.projectID }}/{{ .Values.appName }}:{{ .Values.imageTag }}
+        imagePullPolicy: Always
+        name: {{ .Values.appName }}
+        ports:
+        - containerPort: {{ .Values.hugoPort }}
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: {{ .Values.hugoPort }}
+          initialDelaySeconds: 5
+          periodSeconds: 30
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: {{ .Values.hugoPort }}
+          initialDelaySeconds: 5
+          periodSeconds: 30

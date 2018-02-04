@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ .Values.appName }}-ingress
+  namespace: {{ .Values.appName }}
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: "gce"
+spec:
+  tls:
+  - hosts:
+    - {{ .Values.appName }}.com
+    secretName: {{ .Values.appName }}-tls
+  rules:
+  - host: {{ .Values.appName }}.com
+    http:
+      paths:
+      - path: /*
+        backend:
+          serviceName: {{ .Values.appName }}-service
+          servicePort: {{ .Values.hugoPort }}

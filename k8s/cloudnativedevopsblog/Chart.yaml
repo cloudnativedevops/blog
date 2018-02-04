@@ -1,0 +1,7 @@
+name: cloudnativedevopsblog
+version: 1.0.0
+description: Website for cloudnativedevopsblog.com
+home: https://cloudnativedevopsblog.com
+sources:
+  - https://github.com/cloudnativedevops/blog
+icon: https://github.com/cloudnativedevops/blog
