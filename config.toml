@@ -1,0 +1,11 @@
+baseURL = "http://cloudnativedevopsblog.com/"
+languageCode = "en-us"
+title = "Cloud Native DevOps Blog"
+
+theme = "purehugo"
+Paginate = 10
+
+[params]
+  githubName = "cloudnativedevops"
+  description = "Cloud Native DevOps blog"
+  google_analytics = "UA-xxxxxx-xx"
