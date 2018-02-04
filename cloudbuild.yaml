@@ -1,0 +1,14 @@
+steps:
+  - id: 'build'
+    name: 'gcr.io/cloud-builders/docker'
+    args:
+    - build
+    - -t
+    - us.gcr.io/${PROJECT_ID}/cloudnativedevopsblog:${COMMIT_SHA}
+    - -t
+    - us.gcr.io/${PROJECT_ID}/cloudnativedevopsblog:latest
+    - .
+
+images:
+  - us.gcr.io/${PROJECT_ID}/cloudnativedevopsblog:${COMMIT_SHA}
+  - us.gcr.io/${PROJECT_ID}/cloudnativedevopsblog:latest

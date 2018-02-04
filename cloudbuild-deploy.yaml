@@ -1,0 +1,45 @@
+steps:
+
+  - id: 'conditionally-build'
+    name: 'gcr.io/cloud-builders/docker'
+    entrypoint: 'bash'
+    args:
+    - -c
+    - |
+      docker pull us.gcr.io/${PROJECT_ID}/${_APP_NAME}:${COMMIT_SHA} || \
+      (docker build -t us.gcr.io/${PROJECT_ID}/${_APP_NAME}:${COMMIT_SHA} -t us.gcr.io/${PROJECT_ID}/${_APP_NAME}:latest . && \
+      docker push us.gcr.io/${PROJECT_ID}/${_APP_NAME}:${COMMIT_SHA} && \
+      docker push us.gcr.io/${PROJECT_ID}/${_APP_NAME}:latest)
+
+  - id: 'update-tag'
+    name: 'gcr.io/cloud-builders/gcloud'
+    args:
+    - beta
+    - container
+    - images
+    - add-tag
+    - us.gcr.io/${PROJECT_ID}/${_APP_NAME}:${COMMIT_SHA}
+    - us.gcr.io/${PROJECT_ID}/${_APP_NAME}:${TAG_NAME}
+
+  - id: 'get-kube-config'
+    name: 'gcr.io/cloud-builders/kubectl'
+    env:
+    - 'CLOUDSDK_CORE_PROJECT=${_CLOUDSDK_CORE_PROJECT}'
+    - 'CLOUDSDK_COMPUTE_ZONE=${_CLOUDSDK_COMPUTE_ZONE}'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLOUDSDK_CONTAINER_CLUSTER}'
+    - 'KUBECONFIG=/workspace/.kube/config'
+    args: ['cluster-info']
+
+  - id: 'deploy'
+    name: 'gcr.io/$PROJECT_ID/cloud-builders-helm'
+    env:
+      - 'KUBECONFIG=/workspace/.kube/config'
+    args:
+      - helm
+      - upgrade
+      - --install
+      - ${_APP_NAME}
+      - --namespace=blog
+      - --set
+      - image.tag=${COMMIT_SHA}
+      - ./k8s/${_APP_NAME}
