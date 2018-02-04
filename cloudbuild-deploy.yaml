@@ -39,7 +39,7 @@ steps:
       - upgrade
       - --install
       - ${_APP_NAME}
-      - --namespace=blog
+      - --namespace=${_APP_NAME}
       - --set
       - image.tag=${COMMIT_SHA}
       - ./k8s/${_APP_NAME}
