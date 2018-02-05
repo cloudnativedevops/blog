@@ -11,16 +11,6 @@ steps:
       docker push us.gcr.io/${PROJECT_ID}/${_APP_NAME}:${COMMIT_SHA} && \
       docker push us.gcr.io/${PROJECT_ID}/${_APP_NAME}:latest)
 
-  - id: 'update-tag'
-    name: 'gcr.io/cloud-builders/gcloud'
-    args:
-    - beta
-    - container
-    - images
-    - add-tag
-    - us.gcr.io/${PROJECT_ID}/${_APP_NAME}:${COMMIT_SHA}
-    - us.gcr.io/${PROJECT_ID}/${_APP_NAME}:${TAG_NAME}
-
   - id: 'get-kube-config'
     name: 'gcr.io/cloud-builders/kubectl'
     env:
