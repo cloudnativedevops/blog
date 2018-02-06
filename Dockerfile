@@ -6,7 +6,8 @@ ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${H
 RUN tar -xf /tmp/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /usr/local/bin/
 
 # build site
-COPY . /site
-CMD hugo server --source=/site/ --destination=/public/ --bind 0.0.0.0
+WORKDIR /site
+COPY . .
+CMD hugo server --bind 0.0.0.0
 
 EXPOSE 1313
