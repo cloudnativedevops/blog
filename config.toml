@@ -1,7 +1,6 @@
-baseURL = "http://cloudnativedevopsblog.com/"
+baseurl = "http://cloudnativedevopsblog.com/"
 languageCode = "en-us"
 title = "Cloud Native DevOps Blog"
-
 theme = "purehugo"
 Paginate = 10
 
