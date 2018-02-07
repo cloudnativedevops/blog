@@ -15,16 +15,16 @@ spec:
         imagePullPolicy: Always
         name: {{ .Values.appName }}
         ports:
-        - containerPort: {{ .Values.hugoPort }}
+        - containerPort: {{ .Values.containerPort }}
         readinessProbe:
           httpGet:
             path: /health
-            port: {{ .Values.hugoPort }}
+            port: {{ .Values.containerPort }}
           initialDelaySeconds: 5
           periodSeconds: 30
         livenessProbe:
           httpGet:
             path: /health
-            port: {{ .Values.hugoPort }}
+            port: {{ .Values.containerPort }}
           initialDelaySeconds: 5
           periodSeconds: 30

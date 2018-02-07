@@ -5,8 +5,8 @@ metadata:
   namespace: {{ .Values.appName }}
 spec:
   ports:
-  - port: {{ .Values.hugoPort }}
-    targetPort: {{ .Values.hugoPort }}
+  - port: {{ .Values.containerPort }}
+    targetPort: {{ .Values.containerPort }}
     protocol: TCP
   type: NodePort
   selector:

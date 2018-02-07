@@ -18,4 +18,4 @@ spec:
       - path: /*
         backend:
           serviceName: {{ .Values.appName }}-service
-          servicePort: {{ .Values.hugoPort }}
+          servicePort: {{ .Values.containerPort }}
