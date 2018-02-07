@@ -3,29 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://cloudnativedevopsblog.com/posts/hello-world/</loc>
+    <loc>https://cloudnativedevopsblog.com/posts/hello-world/</loc>
     <lastmod>2018-02-04T08:07:21-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cloudnativedevopsblog.com/categories/</loc>
+    <loc>https://cloudnativedevopsblog.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cloudnativedevopsblog.com/</loc>
-    <lastmod>2018-02-04T08:07:21-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cloudnativedevopsblog.com/posts/</loc>
+    <loc>https://cloudnativedevopsblog.com/</loc>
     <lastmod>2018-02-04T08:07:21-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cloudnativedevopsblog.com/tags/</loc>
+    <loc>https://cloudnativedevopsblog.com/posts/</loc>
+    <lastmod>2018-02-04T08:07:21-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cloudnativedevopsblog.com/tags/</loc>
     <priority>0</priority>
   </url>
   

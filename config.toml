@@ -1,4 +1,4 @@
-baseurl = "http://cloudnativedevopsblog.com/"
+baseurl = "https://cloudnativedevopsblog.com/"
 languageCode = "en-us"
 title = "Cloud Native DevOps Blog"
 theme = "purehugo"

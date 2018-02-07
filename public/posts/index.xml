@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Cloud Native DevOps Blog</title>
-    <link>http://cloudnativedevopsblog.com/posts/</link>
+    <link>https://cloudnativedevopsblog.com/posts/</link>
     <description>Recent content in Posts on Cloud Native DevOps Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Feb 2018 08:07:21 -0800</lastBuildDate>
     
-	<atom:link href="http://cloudnativedevopsblog.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cloudnativedevopsblog.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello World</title>
-      <link>http://cloudnativedevopsblog.com/posts/hello-world/</link>
+      <link>https://cloudnativedevopsblog.com/posts/hello-world/</link>
       <pubDate>Sun, 04 Feb 2018 08:07:21 -0800</pubDate>
       
-      <guid>http://cloudnativedevopsblog.com/posts/hello-world/</guid>
+      <guid>https://cloudnativedevopsblog.com/posts/hello-world/</guid>
       <description>Good morning! Welcome to the Cloud Native DevOps Blog!</description>
     </item>
     
