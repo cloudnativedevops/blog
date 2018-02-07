@@ -9,3 +9,4 @@ Paginate = 10
   githubName = "cloudnativedevops"
   description = "Cloud Native DevOps blog"
   google_analytics = "UA-xxxxxx-xx"
+  twitterName = "cloudnatived"
