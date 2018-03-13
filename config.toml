@@ -12,4 +12,4 @@ Paginate = 10
   hideShareOptions = true
 
 [permalinks]
-    post = "/:title"
+  post = "/:title"
