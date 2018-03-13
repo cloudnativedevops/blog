@@ -10,3 +10,6 @@ Paginate = 10
   google_analytics = "UA-113693326-1"
   twitterName = "cloudnatived"
   hideShareOptions = true
+
+[permalinks]
+    post = "/:title"
