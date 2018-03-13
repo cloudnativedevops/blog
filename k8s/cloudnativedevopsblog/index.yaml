@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  cloudnativedevopsblog:
+  - created: 2018-03-12T20:26:42.310750409-07:00
+    description: Website for cloudnativedevopsblog.com
+    digest: e693857e1c795642d9c84e14dce08b05a65d75b98dd7a8b02ae85b1128371318
+    home: https://cloudnativedevopsblog.com
+    icon: https://github.com/cloudnativedevops/blog
+    name: cloudnativedevopsblog
+    sources:
+    - https://github.com/cloudnativedevops/blog
+    urls:
+    - cloudnativedevopsblog-1.0.0.tgz
+    version: 1.0.0
+generated: 2018-03-12T20:26:42.309314548-07:00
