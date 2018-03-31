@@ -8,6 +8,5 @@ spec:
   - port: {{ .Values.containerPort }}
     targetPort: {{ .Values.containerPort }}
     protocol: TCP
-  type: NodePort
   selector:
     app: {{ .Values.appName }}
