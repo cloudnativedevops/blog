@@ -33,3 +33,39 @@ steps:
       - --set
       - imageTag=${COMMIT_SHA}
       - ./k8s/${_APP_NAME}
+
+  - id: 'package-chart'
+    name: 'gcr.io/$PROJECT_ID/cloud-builders-helm'
+    env:
+      - 'KUBECONFIG=/workspace/.kube/config'
+    args:
+      - helm
+      - package
+      - k8s/${_APP_NAME}
+
+  - id: 'generate-index'
+    name: 'gcr.io/$PROJECT_ID/cloud-builders-helm'
+    env:
+      - 'KUBECONFIG=/workspace/.kube/config'
+    args:
+      - helm
+      - repo
+      - index
+      - .
+      - --url
+      - ${_HELM_REPO_URL}
+
+  - id: 'sync-index'
+    name: 'gcr.io/cloud-builders/gsutil'
+    args:
+      - cp
+      - index.yaml
+      - gs://${_HELM_REPO_GCS_BUCKET}/
+
+  - id: 'sync-chart'
+    name: 'gcr.io/cloud-builders/gsutil'
+    args:
+      - cp
+      - ${_APP_NAME}*.tgz
+      - gs://${_HELM_REPO_GCS_BUCKET}/
+
