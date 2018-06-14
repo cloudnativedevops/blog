@@ -24,7 +24,7 @@ Of course, everyone who's enthusiastic about Kubernetes wants to tell you how ea
 
 # It's not just about Kubernetes
 
-Like any promising new technology, Kubernetes attracts people with a certain evangelical fervour, who want to tell you that it will do everything and solve all problems. But we know that's silly. It would be equally wrong, however, to conclude that Kubernetes is all hype, and it will soon fade away like a hundred other bits of tech which were the Next Big Thing once.
+Like any promising new technology, Kubernetes attracts people with a certain evangelical fervor, who want to tell you that it will do everything and solve all problems. But we know that's silly. It would be equally wrong, however, to conclude that Kubernetes is all hype, and it will soon fade away like a hundred other bits of tech which were the Next Big Thing once.
 
 Kubernetes is actually a really useful tool, but no single tool can do everything on its own. There are a lot of new, or relatively new, concepts swirling around which are all vaguely connected, including:
 
@@ -42,11 +42,11 @@ We think a good term which describes and groups all these related concepts toget
 
 Of course, 'cloud native' means different things to different people, on a spectrum from completely 'serverless' infrastructures (which we would rather describe as 'functions-as-a-service', or _FaaS_) to completely self-hosted environments using no third-party services at all, except perhaps the public cloud. However, we think when we talk about _cloud native devops_ you will know what we mean.
 
-If you've been in the tech industry for a while and are used to, let's call it _traditional IT operations_, cloud native means not just a new stack, but a fundamental shift in the way we think about building and running applications on the Internet. On the other hand, if you're new to the whole thing, you don't have anything to unlearn, but you may not be sure just where to start. Well, we can help. It's not as intimidating as it seems, especially when you realise that there's a lot you simply don't need to know.
+If you've been in the tech industry for a while and are used to, let's call it _traditional IT operations_, cloud native means not just a new stack, but a fundamental shift in the way we think about building and running applications on the Internet. On the other hand, if you're new to the whole thing, you don't have anything to unlearn, but you may not be sure just where to start. Well, we can help. It's not as intimidating as it seems, especially when you realize that there's a lot you simply don't need to know.
 
 # Come for the ride
 
-Over the next few months we'll be posting tips, thoughts, ideas, techniques, questions, and code examples, which you may find useful when learning about devops in the cloud native world. We hope you'll join in the discussion, and be part of this journey. Start by following [cloudnatived](https://twitter.com/cloudnatived) on Twitter! 
+Over the next few months we'll be posting tips, thoughts, ideas, techniques, questions, and code examples, which you may find useful when learning about devops in the cloud native world. We hope you'll join in the discussion, and be part of this journey. Start by following [cloudnatived](https://twitter.com/cloudnatived) on Twitter!
 
 [{{% img-responsive "/static/img/twitter.png" %}}](https://twitter.com/cloudnatived)
 
