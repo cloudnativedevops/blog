@@ -34,6 +34,15 @@ steps:
       - imageTag=${COMMIT_SHA}
       - ./k8s/${_APP_NAME}
 
+  - id: 'init'
+    name: 'gcr.io/$PROJECT_ID/cloud-builders-helm'
+    env:
+      - 'KUBECONFIG=/workspace/.kube/config'
+    args:
+      - helm
+      - init
+      - --client-only
+
   - id: 'package-chart'
     name: 'gcr.io/$PROJECT_ID/cloud-builders-helm'
     env:
