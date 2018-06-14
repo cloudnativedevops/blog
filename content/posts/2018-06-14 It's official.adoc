@@ -1,0 +1,102 @@
+---
+title: "It's official!"
+date: 2018-06-12T08:56:00
+---
+
+{{% img-responsive "/static/img/titlepage.png" %}}
+
+It's no longer just a dream. We're delighted to announce that 'Cloud Native DevOps with Kubernetes' will be published by O'Reilly, hopefully early in 2019. Early release chapters will be available in Safari from around July 2018.
+
+So, what's it all about?
+
+## Cloud Native DevOps with Kubernetes
+
+This is the second book you should buy after 'Kubernetes Up & Running'. 'Cloud Native DevOps' introduces the new world of cloud native applications and gives you a wealth of practical tips on how to run Kubernetes clusters, how to write and deploy Kubernetes applications, and how to apply DevOps best practices: infrastructure as code, continuous deployment, metrics, observability. We also cover managing cloud infrastructure with Terraform, migrating legacy applications to Kubernetes, building cloud native microservices in Go, and we provide complete, working example code for everything in the book, available in a separate GitHub repo. This book takes you from zero to Kubernetes in 210 densely-packed pages!
+
+If you're a cloud native novice, you'll learn everything you need to know to get your application into the cloud. If you've been working with Kubernetes for a while, you'll learn about the latest tools and features, community best practices, and battle-tested recipes from real production clusters. Even if you're an experienced Kubernetes user, there'll be a few things in this book that you didn't know... we hope!
+
+## Reader feedback
+
+Comments from our volunteer beta readers who've seen early drafts:
+
+"Very useful as a go-to point of reference for anyone looking to use Kubernetes. It's a goldmine, and I feel like I have 'leveled up'!"
+
+"Super clear and informative."
+
+"A fascinating tour of the cloud native landscape and the tech that powers it."
+
+"I learned a lot, and definitely have some action points to take away!"
+
+"Well-structured, with very helpful examples."
+
+"I enjoyed the style and voice of the book."
+
+"SUPER stoked about this book!"
+
+"I've had quite the adventure, and enjoyed it immensely. The practical stuff got me hooked."
+
+"Pitched at just the right level—the progression from one concept to the next is very slick."
+
+"Fantastic. So glad the authors have taken their time to put their expertise down on paper."
+
+"It was very easy to follow. Things flow logically, and it was a joy to read."
+
+## Outline
+
+*Revolution in the cloud*::
+
+Over the last five years a revolution has been gradually but fundamentally changing the IT landscape, driven by three things: DevOps, cloud, and containers. We briefly recount the history and significance of this revolution, and what it means for those of us deploying and operating commercial software today and over the next few years.
+
+*First steps with Kubernetes*::
+
+Kubernetes is the fundamental and primary tool for cloud native DevOps, so let's start using it. In this chapter, you'll build a simple containerized application and deploy it to Kubernetes. In the process, you'll meet some very important cloud native technologies and concepts: Docker, Go, container registries, Minikube, and the `kubectl` tool. You'll also learn about the fundamental Kubernetes resources: Pods, Deployments, and Services.
+
+*Helm: a Kubernetes package manager*::
+
+In this chapter we'll explore the Helm tool, which lets you template and manage the Kubernetes resources for a given application in a _chart_ package. You'll learn how to install Helm, configure it securely for your cluster, and install the chart for our demo application. We'll explain what Helm _charts_, _repositories_, and _releases_ are, and how to use them, and show you how to change configuration values for Helm charts using _values files_.
+
+*Getting Kubernetes*::
+
+Kubernetes is the operating system of the cloud native world, providing a reliable and scalable platform for running containerized workloads. But how should you run Kubernetes? Should you host it yourself? On cloud servers? On bare metal? Or should you use a managed Kubernetes service? Or a managed platform that's based on Kubernetes, but extends it with workflow tools, dashboards, and web interfaces? We'll focus on helping you understand the basic architecture of Kubernetes, and make decisions about _whether_ to build Kubernetes clusters yourself, and which tools to use, or whether to use managed services, and outline the various vendors and options available.
+
+*Operating clusters*::
+
+Once you have a Kubernetes cluster, how do you know it's in good shape and running properly? In this chapter we'll look at the issues involved in operating Kubernetes clusters for production workloads: how to size and scale your cluster, how to back up critical data, how to check your cluster for security, valid configuration, and standards conformance, and how to monitor your cluster for problems in real time.
+
+{{% img-responsive "/static/img/chaos.png" %}}
+
+*Managing resources*::
+
+How do you scale to cope with demand, but keep cloud costs to a minimum? How can you keep unrelated applications or environments separate? This chapter looks at how to manage your use of Kubernetes resources with resource requests and limits, how to control the container lifecycle using liveness and readiness probes, how to partition the cluster using namespaces, and how to optimize your cloud costs by choosing the right node and storage classes, and cleaning up unused resources.
+
+*Kubernetes power tools*::
+
+Working with Kubernetes on a day-to-day basis is made much more pleasant and productive if you know how to get the most out of `kubectl` and friends, including `kubectx` / `kubens`, `minikube`, `jq`, `kube-shell` and many more. We look at the latest tools for improving the Kubernetes developer experience, including Draft, Skaffold, Helm, `ksonnet`, `kustomize`, Telepresence, and others, and recommend the best of the bunch.
+
+*Deploying Kubernetes applications*::
+
+How to get your code into containers, clusters, and clouds. We cover deployment strategies, CI/CD, GitOps, sidecars, init containers, CronJobs, StatefulSets, and the rest. We also examine some techniques for running legacy and monolithic applications in Kubernetes. We'll consider configuration data, secrets, and encryption.
+
+*Infrastructure as code*::
+
+In this chapter we'll examine infrastructure as code in more detail, outline what kind of infrastructure we mean, the advantages of managing it as code, and look at some of the characteristics of a continuously-applied, declarative infrastructure as code system.
+
+*Managing infrastructure with Terraform*::
+
+In this chapter we'll use Terraform to manage a variety of cloud resources on AWS and Google Cloud Platform. We introduce Terraform, a simple but powerful tool for managing infrastructure as code, and present complete, working examples using Terraform to build cloud servers, firewall rules, database instances, storage buckets, and more.
+
+*Observability and monitoring*::
+
+There are two questions we need to answer about cloud native applications: what’s broken, and why? Answering these questions involves instrumenting your applications and services to produce metrics and structured log data, using the instrumentation provided by your third-party software dependencies, centralizing and aggregrating all that information in a reliable, performant time-series database, and querying it to detect anomalies, predict failures, identify performance bottlenecks, and troubleshoot ongoing issues. We dive into Prometheus and distributed tracing tools.
+
+*Putting it all together*::
+
+In the final chapter, we bring together all the techniques and workflows explored in previous chapters, to develop a complete, working cloud native application and infrastructure from scratch. You can take this code and adapt it to use with your own applications and infrastructure.
+
+## Help wanted
+
+We need more beta readers to look at draft chapters and send their feedback. It doesn't matter whether you have lots of experience with Kubernetes, or none: we'd love your feedback! Email john@bitfieldconsulting.com if you'd like to be on the list.
+
+## Keep watching the skies
+
+We'll let you know here as soon as the first chapters are available on early release.
