@@ -1,4 +1,4 @@
-FROM klakegg/hugo:0.42.1-asciidoctor as builder
+FROM klakegg/hugo:0.43-asciidoctor as builder
 
 # build site
 COPY . /source
