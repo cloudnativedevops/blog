@@ -1,14 +1,19 @@
 steps:
-  - id: 'build'
-    name: 'gcr.io/cloud-builders/docker'
-    args:
-    - build
-    - -t
-    - us.gcr.io/${PROJECT_ID}/cloudnativedevopsblog:${COMMIT_SHA}
-    - -t
-    - us.gcr.io/${PROJECT_ID}/cloudnativedevopsblog:latest
-    - .
 
-images:
-  - us.gcr.io/${PROJECT_ID}/cloudnativedevopsblog:${COMMIT_SHA}
-  - us.gcr.io/${PROJECT_ID}/cloudnativedevopsblog:latest
+- name: klakegg/hugo:0.46-asciidoctor
+  volumes:
+  - name: public-assets
+    path: /target
+  args:
+    - -F
+    - --verbose
+
+- name: gcr.io/cloud-builders/gcloud
+  volumes:
+  - name: public-assets
+    path: /target
+  entrypoint: bash
+  args:
+    - -c
+    - |
+      mkdir public && cp -r /target/* ./public/ && gcloud app deploy
