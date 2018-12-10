@@ -1,6 +1,6 @@
 steps:
 
-- name: klakegg/hugo:0.46-asciidoctor
+- name: klakegg/hugo:0.52-asciidoctor
   volumes:
   - name: public-assets
     path: /target
