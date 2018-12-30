@@ -14,6 +14,7 @@ So, what's it all about?
 This is the second book you should buy after 'Kubernetes Up & Running'. 'Cloud Native DevOps' introduces the new world of cloud native applications and gives you a wealth of practical tips on how to run Kubernetes clusters, how to write and deploy Kubernetes applications, and how to apply DevOps best practices: infrastructure as code, continuous deployment, metrics, observability. We also cover managing cloud infrastructure with Terraform, migrating legacy applications to Kubernetes, building cloud native microservices in Go, and we provide complete, working example code for everything in the book, available in a separate GitHub repo. This book takes you from zero to Kubernetes in 210 densely-packed pages!
 
 If you're a cloud native novice, you'll learn everything you need to know to get your application into the cloud. If you've been working with Kubernetes for a while, you'll learn about the latest tools and features, community best practices, and battle-tested recipes from real production clusters. Even if you're an experienced Kubernetes user, there'll be a few things in this book that you didn't know... we hope!
+<!--more-->
 
 ## Reader feedback
 

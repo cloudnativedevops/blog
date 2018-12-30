@@ -19,16 +19,22 @@
                                 By <strong class="post-author">{{ . }}</strong>
                             {{ end }}
                             {{ if isset .Params "categories" }}
-                                under 
+                                under
                                 {{ $baseUrl := .Site.BaseURL }}
                                 {{ range .Params.categories }}<a class="post-category post-category-{{ . }}" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
                             {{ end }}
                         </p>
                     </header>
 
-                    <div class="post-description">
-                        {{ .Content }}
+                    {{ .Summary }}
+
+                    {{ if .Truncated }}
+                    <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+                    <div>
+                      <a href="{{ .RelPermalink }}">Read More…</a>
                     </div>
+                    {{ end }}
+
                 </section>
                 {{ end }}
             </div>

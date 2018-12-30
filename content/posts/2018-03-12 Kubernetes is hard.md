@@ -21,6 +21,7 @@ Of course, everyone who's enthusiastic about Kubernetes wants to tell you how ea
 * Horizontal Pod Autoscaler
 
 ... and so on. If you feel depressed and angry at the amount of new things Kubernetes requires you to learn, then we can absolutely relate to that. We've been through some of the same emotions on our Kubernetes journey, which is by no means complete, but the point of this blog is to hammer a few signposts into the swamp to help others feeling similarly lost.
+<!--more-->
 
 # It's not just about Kubernetes
 

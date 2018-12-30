@@ -10,3 +10,4 @@ date: 2018-09-11T17:18:09
 [Pre-order 'Cloud Native DevOps with Kubernetes'](https://amzn.to/2PEPTjc)
 
 Over the next couple of months we'll be posting some teasers, previews, and exclusive extracts from the book here—so keep checking the blog!
+<!--more-->

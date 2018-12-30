@@ -21,6 +21,7 @@ This option involves adding a step to your CI/CD pipeline to run the migrations 
 This last step is where the migration needs to happen. Jenkins, Drone, GitLab CI, or whatever CI/CD tool you use could migrate the database before setting a new version of your application to run. For example, you could add a step in the pipeline to run something like `docker run <your-app-container>:<your-newly-built-container-tag> <your-db-migrate-command>...`.
 
 The advantage to this method is that if the migration fails, the whole deployment fails and you can see right away that the deploy did not completely succeed. However, in order for this to be possible, your CI/CD tooling needs access to your application’s database, along with the application’s database credentials. This may not be possible if your CI/CD pipeline tools run in an isolated or separate environment from your application. For example, if you are using a SaaS CI/CD tool, network access to your application's database may not be an option.
+<!--more-->
 
 ### Kubernetes Job
 

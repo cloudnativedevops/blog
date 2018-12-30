@@ -10,3 +10,4 @@ Kubernetes security is [in the news](https://threatpost.com/kubernetes-flaw-is-a
 Apart from hearing what we sound like, and in Justin's case, look like, you'll also hear a bit about how we came to write the 'Cloud Native DevOps' book, and exactly where we think security fits in to cloud native (spoiler: everywhere!)
 
 Many thanks to DevOps.com for hosting the webcast, and to the magnificent Charlene O'Hanlon for being our moderator.
+<!--more-->
