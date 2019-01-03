@@ -35,6 +35,13 @@
                     </a>
                 </li>
                 {{ end }}
+                {{ if .Site.Params.amazonLink }}
+                <li class="nav-item">
+                    <a class="pure-button" href="{{ .Site.Params.amazonLink">
+                        <i class="fa fa-amazon"></i>{{ if not .Site.Params.hideSidebarIconText }} Book Link{{ end }}
+                    </a>
+                </li>
+                {{ end }}
                 <li class="nav-item">
                     <a class="pure-button" href="{{ .Site.BaseURL }}/index.xml">
                         <i class="fa fa-rss"></i>{{ if not .Site.Params.hideSidebarIconText }} rss{{ end }}

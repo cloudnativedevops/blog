@@ -5,6 +5,7 @@ theme = "purehugo"
 Paginate = 10
 
 [params]
+  amazonLink = "https://amzn.to/2PEPTjc"
   githubName = "cloudnativedevops"
   description = "Cloud Native DevOps blog"
   google_analytics = "UA-113693326-1"
