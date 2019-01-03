@@ -5,6 +5,7 @@ theme = "purehugo"
 Paginate = 10
 
 [params]
+  oreillyLink = "https://www.oreilly.com/library/view/cloud-native-devops/9781492040750/"
   amazonLink = "https://amzn.to/2PEPTjc"
   githubName = "cloudnativedevops"
   description = "Cloud Native DevOps blog"
