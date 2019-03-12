@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Cloud Native DevOps Blog"
 theme = "purehugo"
 Paginate = 10
+summaryLength = 1000
 
 [params]
   oreillyLink = "https://www.oreilly.com/library/view/cloud-native-devops/9781492040750/"
