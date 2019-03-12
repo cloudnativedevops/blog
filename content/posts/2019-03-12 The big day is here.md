@@ -5,7 +5,7 @@ date: 2019-03-11T10:36:56-08:00
 
 The big day is here. It's been a long time coming, but 'Cloud Native DevOps with Kubernetes' is finally published! Your pre-ordered copies should be with you very soon, if they're not thumping on the doorstep already. If you didn't pre-order, what were you thinking? Go ahead and buy the book right now:
 
-[{{% img-responsive "/static/img/cndk_cover_small.jpeg" %}}]((https://amzn.to/2PEPTjc))
+[{{% img-responsive "/static/img/cndk_cover_small.jpeg" %}}](https://amzn.to/2PEPTjc)
 
 [Buy 'Cloud Native DevOps with Kubernetes' on Amazon.com](https://amzn.to/2PEPTjc)
 
