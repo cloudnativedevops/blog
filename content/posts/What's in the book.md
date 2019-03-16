@@ -1,6 +1,8 @@
 ---
 title: "What's in the book?"
 date: 2018-12-30T12:30:24Z
+aliases:
+    - /posts/2018-12-30-whats-in-the-book/
 ---
 
 We're a few days away from going to press, so I thought you might like to see

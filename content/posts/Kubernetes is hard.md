@@ -1,6 +1,8 @@
 ---
 title: "Don't panic!"
 date: 2018-03-12T18:17:00
+aliases:
+    - /posts/2018-03-12-kubernetes-is-hard/
 ---
 # Kubernetes is hard
 

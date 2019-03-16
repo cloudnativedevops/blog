@@ -1,6 +1,8 @@
 ---
 title: "Order your copy now!"
 date: 2018-09-11T17:18:09
+aliases:
+    - /posts/2018-09-11-order-your-copy-now/
 ---
 
 [{{% img-responsive "/static/img/amazon.png" %}}](https://amzn.to/2PEPTjc)
