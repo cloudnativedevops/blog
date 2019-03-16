@@ -24,7 +24,8 @@
                 {{ if .Site.Params.stackOverflowId }}
                 <li class="nav-item">
                     <a class="pure-button" href="https://stackoverflow.com/u/{{ .Site.Params.stackOverflowId }}">
-                        <i class="fa fa-stack-overflow"></i>{{ if not .Site.Params.hideSidebarIconText }}Stack Overflow{{ end }}
+                        <i class="fa fa-stack-overflow"></i>{{ if not .Site.Params.hideSidebarIconText }}Stack
+                        Overflow{{ end }}
                     </a>
                 </li>
                 {{ end }}
@@ -35,6 +36,12 @@
                     </a>
                 </li>
                 {{ end }}
+                <li class="nav-item">
+                    <a class="pure-button" href="/posts/the-big-day-is-here/">
+                        <i class="fa fa-question-circle"></i>{{ if not .Site.Params.hideSidebarIconText }} About The
+                        Book{{ end }}
+                    </a>
+                </li>
                 {{ if .Site.Params.amazonLink }}
                 <li class="nav-item">
                     <a class="pure-button" href="{{ .Site.Params.amazonLink }}">
@@ -51,7 +58,7 @@
                 {{ end }}
                 <li class="nav-item">
                     <a class="pure-button" href="{{ .Site.BaseURL }}/index.xml">
-                        <i class="fa fa-rss"></i>{{ if not .Site.Params.hideSidebarIconText }} rss{{ end }}
+                        <i class="fa fa-rss"></i>{{ if not .Site.Params.hideSidebarIconText }} RSS{{ end }}
                     </a>
                 </li>
             </ul>
