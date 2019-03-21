@@ -1,6 +1,8 @@
 ---
 title: "2018 Kubecon"
 date: 2019-01-03T09:36:56-08:00
+aliases:
+    - /posts/2019-01-03-2018-kubecon/
 ---
 
 Some reactions from the recent Kubecon event in Seattle:

@@ -1,6 +1,8 @@
 ---
 title: "Securing Modern Applications in the Cloud"
 date: 2018-12-08T10:55:52Z
+aliases:
+    - /posts/2018-12-08-securing-modern-applications/
 ---
 
 Kubernetes security is [in the news](https://threatpost.com/kubernetes-flaw-is-a-huge-deal-lays-open-cloud-deployments/139636/) at the moment, not necessarily in a good way. We thought it might be an appropriate time to share an interesting conversation we had recently with our friends Todd and Hannah at [Threat Stack](https://www.threatstack.com/) about Kubernetes, container security, and much more! We also had the fun of answering some questions from members of the audience.

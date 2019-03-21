@@ -1,6 +1,8 @@
 ---
 title: "Database Migrations in Kubernetes"
 date: 2018-12-13T12:00:00Z
+aliases:
+    - /posts/2018-12-13-database-migrations/
 ---
 
 Applications with databases usually need to run migration tasks as part of their deployment processes. For example, in a Rails application this is done with the `rake db:migrate` command. Other frameworks have similar commands to manage the migrations.  Typically, running migrations is one of the first steps in a deploy when upgrading the application to a new version. In a CI/CD pipeline for deploying an application running in Kubernetes there are a couple of options for how to handle migrations. In this post we’ll discuss two of them:

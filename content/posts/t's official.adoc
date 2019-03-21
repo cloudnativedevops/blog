@@ -1,6 +1,8 @@
 ---
 title: "It's official!"
 date: 2018-06-12T08:56:00
+aliases:
+    - /posts/2018-06-14-its-official/
 ---
 
 {{% img-responsive "/static/img/titlepage.png" %}}
