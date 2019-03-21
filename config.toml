@@ -8,7 +8,7 @@ summaryLength = 1000
 [params]
   oreillyLink = "https://www.oreilly.com/library/view/cloud-native-devops/9781492040750/"
   amazonLink = "https://amzn.to/2PEPTjc"
-  githubName = "cloudnativedevops"
+  githubName = "cloudnativedevops/demo"
   description = ""
   google_analytics = "UA-113693326-1"
   twitterName = "cloudnatived"
