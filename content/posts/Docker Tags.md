@@ -1,25 +1,22 @@
 ---
 title: "Deciding which Docker tag to use"
 date: 2019-03-30T12:00:00Z
-aliases:
-    - /posts/2018-03-30-docker-tags/
 ---
 
 In this post we're going to talk about how versioning works in Docker container images. We’ll also explore some different strategies you will want to consider when using image version tags in your own Dockerfiles.
 
 Docker container names are split into 2 parts: the name of the container image, and the version tag of the container image. For example, the container `python:3` is a container hosted on Docker Hub at [https://hub.docker.com/_/python](https://hub.docker.com/_/python). The name of the container is `python`, and `3` is the version tag. There are several other version tags of `python` also available, such as:
 
-python:3.7,
-python:3.7.3
-python:3-alpine
-python:3.7-alpine
-python:3.7.3-alpine
-python:slim
-etc.
+- `python:3.7`
+- `python:3.7.3`
+- `python:3-alpine`
+- `python:3.7-alpine`
+- `python:3.7.3-alpine`
+- `python:slim`
 
-Most of the popular languages use a similar tagging pattern in their official images on Docker Hub. Each of these tags represents different variations of an install of python. Some use a different base operating system images (alpine VS debian VS “slimmed-down” debian), and they also indicate the specific versions of whatever language is installed in the image.
+Most of the popular languages use a similar tagging pattern in their official images on Docker Hub. Each of these tags represents different variations of an install of Python. Some use a different base operating system images (Alpine VS Debian VS “slimmed-down” Debian), and they also indicate the specific versions of whatever language is installed in the image.
 
-Today the `python:3` container image specifically uses python version 3.8. Whenever 3.9 is released, that tag will get updated and the `python:3` image will then contain version 3.9 instead. In a similar way, the `python:3.7` image would be the latest available security patch of python 3.7. Currently that happens to be 3.7.3, but tomorrow that could be 3.7.4 if a new version is released.
+Today the `python:3` container image specifically uses Python version 3.8. Whenever 3.9 is released, that tag will get updated and the `python:3` image will then contain version 3.9 instead. In a similar way, the `python:3.7` image would be the latest available security patch of Python 3.7. Currently that happens to be 3.7.3, but tomorrow that could be 3.7.4 if a new version is released.
 
 When writing your own applications, you will need to decide which version of the base image(s) you will use in the `FROM` statement(s) of your Dockerfile(s). The options include:
 
@@ -29,13 +26,13 @@ When writing your own applications, you will need to decide which version of the
 
 Let’s look a bit at each option, and discuss why you may want to use one tagging strategy over another.
 
-If you have docker installed run something like `docker run python`. The output you may see is `Unable to find image 'python:latest' locally`, then some layers get downloaded from Docker Hub, and then you'll see `Downloaded newer image for python:latest`. Note that you didn’t specify the`:latest` tag, but that is what you got. Good or bad, this is the default behavior in Docker [https://docs.docker.com/engine/reference/commandline/pull/](https://docs.docker.com/engine/reference/commandline/pull/).
+If you have Docker installed run something like `docker run python`. The output you may see is `Unable to find image 'python:latest' locally`, then some layers get downloaded from Docker Hub, and then you'll see `Downloaded newer image for python:latest`. Note that you didn’t specify the`:latest` tag, but that is what you got. Good or bad, this is the default behavior in Docker [https://docs.docker.com/engine/reference/commandline/pull/](https://docs.docker.com/engine/reference/commandline/pull/).
 
-So which version of python did you get? And which base operating system? In this case, the `:latest` tag currently points at version 3 of a container with Debian 9 installed. When a new version of python (or a new version of Debian) is released, the `:latest` tag will point at the newer image.
+So which version of Python did you get? And which base operating system? In this case, the `:latest` tag currently points at version 3 of a container with Debian 9 installed. When a new version of Python (or a new version of Debian) is released, the `:latest` tag will point at the newer image.
 
-This is where you have some decisions to make when writing your own Dockerfiles. If you are writing an application in Python, for example, it probably matters very much if you are using python version 2 or version 3. And when version 4 comes out, you will likely have some work to do in your codebase before you can upgrade. If your Dockerfile starts with `FROM python:latest` then one day you will go to deploy some new code, you’ll build a new container, and the python in that container will change from version 3 to version 4. You probably don’t want this to happen without some planning involved.
+This is where you have some decisions to make when writing your own Dockerfiles. If you are writing an application in Python, for example, it probably matters very much if you are using Python version 2 or version 3. And when version 4 comes out, you will likely have some work to do in your codebase before you can upgrade. If your Dockerfile starts with `FROM python:latest` then one day you will go to deploy some new code, you’ll build a new container, and the Python in that container will change from version 3 to version 4. You probably don’t want this to happen without some planning involved.
 
-So perhaps you decide to use `FROM python:3` and that way you know that your application will always use the latest patched version of python 3. Whenever 3.9, 3.10, 3.11, etc. are released, just by deploying new code you’ll automatically be upgrading your python version along the way. Neat! The downside to this approach is you will likely run into some unexpected failed builds. One day, some package you are using is going to change versions, or have some incompatibility with some other package that changed, and your application will fail to build. This is a frustrating experience to have builds fail when changing code that doesn't touch any package versions.
+So perhaps you decide to use `FROM python:3` and that way you know that your application will always use the latest patched version of Python 3. Whenever 3.9, 3.10, 3.11, etc. are released, just by deploying new code you’ll automatically be upgrading your Python version along the way. Neat! The downside to this approach is you will likely run into some unexpected failed builds. One day, some package you are using is going to change versions, or have some incompatibility with some other package that changed, and your application will fail to build. This is a frustrating experience to have builds fail when changing code that doesn't touch any package versions.
 
 So maybe you were using `FROM python:3` and one day your builds started failing when the version jumped from `3.7` to `3.8`. You then decide to switch to using `FROM python:3.7` instead. Now, when 3.8, 3.9, 3.10 etc. are released, you won’t automatically bump to those minor release versions without you changing it in your Dockerfile.
 
