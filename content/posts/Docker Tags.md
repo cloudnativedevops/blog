@@ -26,6 +26,8 @@ When writing your own applications, you will need to decide which version of the
 
 Let’s look a bit at each option, and discuss why you may want to use one tagging strategy over another.
 
+<!--more-->
+
 If you have Docker installed run something like `docker run python`. The output you may see is `Unable to find image 'python:latest' locally`... Note that you didn’t specify the`:latest` tag, but that is what you got. Good or bad, this is the default behavior in Docker [https://docs.docker.com/engine/reference/commandline/pull/](https://docs.docker.com/engine/reference/commandline/pull/). We cover this more in the Running Containers chapters in the book.
 
 So which version of Python did you get? And which base operating system? In this case, the `:latest` tag currently points at version 3 of a container with Debian 9 installed. When a new version of Python (or a new version of Debian) is released, the `:latest` tag will point at the newer image.
@@ -49,11 +51,13 @@ Here is a quick summary of the pros/cons of each:
 **Movable Tag Strategy:**
 
 **Pros:** You will automatically track upstream patches and updates
+
 **Cons:** Builds will likely break unexpectedly when versions change
 
 **Fixed Digest Strategy:**
 
 **Pros:**  Builds should more consistent and reproducible
+
 **Cons**: You will need to manually update your base image or you will miss out on important patches
 
 If you are looking for a place to start out, try starting with using the minor stable release of the language you are using, such as `python:3.7`. Or in the case of ruby, try something like `ruby:2.6`. For Go, start with something like `golang:1.12`, (or try the `alpine` or `slim` versions if you want to use much smaller images). If you run into some unexpected behavior in testing or are constantly having build failures from dependencies changing out from underneath you, move to a more specific tag. You may end up deciding that for that particular Dockerfile you want to use the exact `sha256` for your base container. This is a fine option, just remember that it means you’ll also need to regularly review and update your base image manually in order to pull in any security patches.
