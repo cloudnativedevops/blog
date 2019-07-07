@@ -1,19 +1,15 @@
 steps:
 
-- name: klakegg/hugo:0.54.0-asciidoctor
-  volumes:
-  - name: public-assets
-    path: /target
-  args:
-    - -F
-    - --verbose
-
-- name: gcr.io/cloud-builders/gcloud
-  volumes:
-  - name: public-assets
-    path: /target
+- name: gcr.io/cloud-builders/docker
   entrypoint: bash
   args:
     - -c
     - |
-      mkdir public && cp -r /target/* ./public/ && gcloud app deploy
+      docker run -v /workspace:/src -v /workspace/public:/target klakegg/hugo:0.55.6-asciidoctor
+
+- name: gcr.io/cloud-builders/gcloud
+  entrypoint: bash
+  args:
+    - -c
+    - |
+      gcloud app deploy
