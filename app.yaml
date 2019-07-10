@@ -1,6 +1,18 @@
-runtime: go112
+runtime: python37
 
 handlers:
-- url: /.*
-  script: _go_app
+## static content routing
+- url: /
+  static_files: public/index.html
+  upload: public/*
+  secure: always
+
+# hugo generates pages in directories so check for index.html first
+- url: /(.*)/
+  static_files: public/\1/index.html
+  upload: public/*
+  secure: always
+
+- url: /
+  static_dir: public/
   secure: always
