@@ -10,6 +10,7 @@ Applications with databases usually need to run migration tasks as part of their
 - Running migrations from your CI/CD tool
 - Using a Kubernetes Job
 
+
 ### CI/CD
 
 This option involves adding a step to your CI/CD pipeline to run the migrations as part of a deploy. A common CI/CD workflow in Kubernetes looks something like this:
