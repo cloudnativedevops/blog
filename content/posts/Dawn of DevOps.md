@@ -13,7 +13,7 @@ But while most people have probably heard of DevOps, not all of them are confide
 
 ## The two cultures
 
-Before DevOps, developing and operating software were essentially two separate jobs, performed by two different groups of people. *Developers* wrote software, and they passed it on to *operations* staff, who ran and maintained the software in production. Two quite distinct kinds of jobs: 'devs' and 'ops'. Maybe you already see where this is going.
+Before DevOps, developing and operating software were two separate jobs, performed by two different groups of people. *Developers* wrote software, and they passed it on to *operations* staff, who ran and maintained the software in production. Two quite distinct kinds of jobs: 'devs' and 'ops'. Maybe you already see where this is going.
 
 Whenever you have two groups of people that don't work together, incentives can get misaligned. Developers tend to be focused on (and rewarded for) shipping new features quickly, while operations teams care about making services stable and reliable over the long term.
 
@@ -43,7 +43,7 @@ So can this integration process continue indefinitely? Are there limits to DevOp
 
 No. Some things still benefit from being centralized. It doesn't make sense for each application or service team to have its own way of detecting and communicating about production incidents, for example, or its own ticketing system, or deployment tools. DevOps is about speeding up development teams, not slowing them down with unnecessary and redundant work.
 
-There still needs to be a strong central team building and supporting the DevOps ecosystem in which all the other teams operate. We like the name _Developer Productivity Engineering_ (DPE) for this. DPE teams do whatever's necessary to help developers do their work better and faster: operating infrastructure, building tools, busting problems.
+There still needs to be a strong central team building and supporting the DevOps ecosystem in which all the other teams operate. We like the name _Developer Productivity Engineering_ (DPE) for this. DPE teams do whatever's necessary to help developers do their work better and faster: operating infrastructure, building tools, solving problems.
 
 ## Show me the money
 
