@@ -1,6 +1,8 @@
 ---
 title: "Don't panic!"
 date: 2018-03-12T18:17:00
+description: "If you've been hearing a lot about Kubernetes, and maybe read some things about it, or even tried to get started running something in Kubernetes, you may be feeling a little dispirited, confused, overwhelmed, puzzled, and possibly suffering the early symptoms of imposter syndrome. Well, don't worry: it's not just you."
+
 aliases:
     - /posts/2018-03-12-kubernetes-is-hard/
 ---

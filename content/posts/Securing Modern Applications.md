@@ -1,6 +1,7 @@
 ---
 title: "Securing Modern Applications in the Cloud"
 date: 2018-12-08T10:55:52Z
+description: "John and Justin recently sat down with the folks from Threat Stack for a DevOps.com webcast to talk Kubernetes, container security, and the origins of 'Cloud Native DevOps with Kubernetes'."
 aliases:
     - /posts/2018-12-08-securing-modern-applications/
 ---

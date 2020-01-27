@@ -1,6 +1,7 @@
 ---
 title: "Deciding which Docker tag to use"
 date: 2019-03-30T12:00:00Z
+description: "How does versioning work in container images? What are the different strategies for using Docker version tags? We explain how Docker versions work, and how to use them in your own Dockerfiles."
 ---
 
 In this post we're going to talk about how versioning works in Docker container images. We’ll also explore some different strategies you will want to consider when using image version tags in your own Dockerfiles.

@@ -1,6 +1,7 @@
 ---
 title: "What's in the book?"
 date: 2018-12-30T12:30:24Z
+description: "A complete table of contents for 'Cloud Native DevOps with Kubernetes', showing everything that the book covers—and it's a lot!"
 aliases:
     - /posts/2018-12-30-whats-in-the-book/
 ---

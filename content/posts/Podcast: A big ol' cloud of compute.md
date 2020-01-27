@@ -1,6 +1,7 @@
 ---
 title: "Podcast: A big ol' cloud of compute"
 date: 2019-03-19T10:17:00
+description: "John and Justin made a guest appearance recently on the 'Deloitte: On Cloud' podcast with David Linthicum, talking about cloud native, DevOps, and Kubernetes from the business perspective. It was great for us to have a chance to talk about the organizational and business side of things—as David points out in the show, DevOps is always about the people."
 ---
 
 John and Justin made a guest appearance recently on the 'Deloitte: On Cloud' podcast with David Linthicum, talking about cloud native, DevOps, and Kubernetes from the business perspective.

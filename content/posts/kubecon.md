@@ -1,6 +1,7 @@
 ---
 title: "2018 Kubecon"
 date: 2019-01-03T09:36:56-08:00
+description: "Reactions from Kubecon 2018, and a couple of predictions for the future, from our roving correspondent, Justin Domingus."
 aliases:
     - /posts/2019-01-03-2018-kubecon/
 ---

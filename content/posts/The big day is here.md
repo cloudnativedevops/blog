@@ -1,6 +1,7 @@
 ---
 title: "'Cloud Native DevOps with Kubernetes' is published!"
 date: 2019-03-11T10:36:56-08:00
+description: "The big day is here. It's been a long time coming, but 'Cloud Native DevOps with Kubernetes' is finally published! Your pre-ordered copies should be with you very soon, if they're not thumping on the doorstep already. If you didn't pre-order, what were you thinking? Go ahead and buy the book right now: https://amzn.to/2PEPTjc"
 aliases:
     - /posts/2019-03-12-the-big-day-is-here/
 ---
