@@ -1,6 +1,7 @@
 ---
 title: "The Dawn of DevOps"
 date: 2020-01-25T16:29:52Z
+description: "What does 'DevOps' mean? Where did it come from? What came before it? How do you do it? And what happens next? The authors of 'Cloud Native DevOps with Kubernetes', John Arundel and Justin Domingus, explain the past, present, and future of the DevOps movement."
 ---
 
 ### What does 'DevOps' mean? Where did it come from? What came before it? How do you do it? And what happens next?

@@ -1,6 +1,7 @@
 ---
 title: "Database Migrations in Kubernetes"
 date: 2018-12-13T12:00:00Z
+description: "In a CI/CD pipeline for deploying an application running in Kubernetes, there are a couple of options for how to handle migrations. In this post we’ll discuss two of them: running migrations from your CI/CD tool, and using a Kubernetes Job resource."
 aliases:
     - /posts/2018-12-13-database-migrations/
 ---

@@ -1,6 +1,7 @@
 ---
 title: "It's official!"
 date: 2018-06-12T08:56:00
+description: "'Cloud Native DevOps' introduces the new world of cloud native applications and gives you a wealth of practical tips on how to run Kubernetes clusters, how to write and deploy Kubernetes applications, and how to apply DevOps best practices: infrastructure as code, continuous deployment, metrics, observability. We also cover managing cloud infrastructure with Terraform, migrating legacy applications to Kubernetes, building cloud native microservices in Go, and we provide complete, working example code for everything in the book, available in a separate GitHub repo. This book takes you from zero to Kubernetes in 210 densely-packed pages!"
 aliases:
     - /posts/2018-06-14-its-official/
 ---

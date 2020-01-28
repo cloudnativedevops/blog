@@ -1,6 +1,7 @@
 ---
 title: "Order your copy now!"
 date: 2018-09-11T17:18:09
+description: "'Cloud Native DevOps with Kubernetes' is now available for pre-order here: https://amzn.to/2PEPTjc"
 aliases:
     - /posts/2018-09-11-order-your-copy-now/
 ---
