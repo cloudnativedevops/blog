@@ -1,6 +1,6 @@
 ---
 title: "Surveying the cloudscape: what’s new, Kubernetes?"
-date: 2019-04-02T12:00:00Z
+date: 2020-04-02T12:00:00Z
 description: "It’s hard to believe, but [‘Cloud Native DevOps with Kubernetes’ has been out for nearly a year] (https://cloudnativedevopsblog.com/posts/the-big-day-is-here/)! While much has changed in the Kubernetes landscape, a lot is also the same. In this post we’ll cover some of the things that have changed (and what hasn’t)."
 ---
 
