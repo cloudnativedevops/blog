@@ -5,6 +5,8 @@ description: "It’s hard to believe, but [‘Cloud Native DevOps with Kubernete
 ---
 It’s hard to believe, but [‘Cloud Native DevOps with Kubernetes’ has been out for nearly a year] (https://cloudnativedevopsblog.com/posts/the-big-day-is-here/)! While much has changed in the Kubernetes landscape, a lot is also the same. In this post we’ll cover some of the things that have changed (and what hasn’t).
 
+<!--more-->
+
 # What has changed
 
 ## Kubernetes - but not by much
