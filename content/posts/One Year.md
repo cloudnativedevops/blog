@@ -22,7 +22,7 @@ One of the tools we mention frequently throughout the book is [Helm](https://hel
 
 Helm 3 removes tiller and instead relies on the user’s RBAC permissions when running `helm` commands. This eliminates the need to run a super-user level process in the cluster, and means that Helm will only be allowed to make changes using the existing permissions of the client.
 
-The community has also built a very handy plugin that makes upgrading from version 2 to 3 very straightforward. Installing Helm on new clusters is also now even easier, as the additional steps of first setting up `tiller` and a service account with cluster administrative permissions is no longer required. The [Helm install docs](https://helm.sh/docs/intro/install/) are the best place to start for installing helm, and docs for migrating from Helm 2 to Helm 3 are [here]: (https://helm.sh/docs/topics/v2_v3_migration/). There are notes on other various changes in Helm 3 [here](https://v3.helm.sh/docs/faq/#changes-since-helm-2).
+The community has also built a very handy plugin that makes upgrading from version 2 to 3 very straightforward. Installing Helm on new clusters is also now even easier, as the additional steps of first setting up `tiller` and a service account with cluster administrative permissions is no longer required. The [Helm install docs](https://helm.sh/docs/intro/install/) are the best place to start for installing helm, and docs for migrating from Helm 2 to Helm 3 are [here](https://helm.sh/docs/topics/v2_v3_migration/). There are notes on other various changes in Helm 3 [here](https://v3.helm.sh/docs/faq/#changes-since-helm-2).
 
 
 ## Go update yourself
