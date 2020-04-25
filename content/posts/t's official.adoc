@@ -6,8 +6,6 @@ aliases:
     - /posts/2018-06-14-its-official/
 ---
 
-{{% img-responsive "/static/img/titlepage.png" %}}
-
 It's no longer just a dream. We're delighted to announce that 'Cloud Native DevOps with Kubernetes' will be published by O'Reilly, hopefully early in 2019. Early release chapters will be available in Safari from around July 2018.
 
 So, what's it all about?
