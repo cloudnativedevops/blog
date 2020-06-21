@@ -8,7 +8,9 @@ In the [Cloud Native DevOps with Kubernetes](https://amzn.to/2PEPTjc) book, we a
 
 In that spirit, then, this is the first of a series of interviews with working engineers about their experiences with Kubernetes and cloud, what makes their jobs easier, what frustrates them, and what advice they'd give to people just getting into the cloud native world.
 
-This week, we talk to software engineer Torie Joy-Warren. Torie lives in a tree-house near Squitch Lake, Washington, with her twelve capuchin monkeys and a priceless Royal Doulton tea service. Her hobbies include backgammon, amateur astronomy, and Ancient Persian.
+{{% img-responsive "/static/img/torie-bio.jpg" %}}
+
+This week, we talk to software engineer Torie Joy-Warren. Torie lives in Toronto with her 6-toed cat, Olive. Apart from coding, she loves to read, play soccer and squash, and bike as much as possible.
 
 <!--more-->
 
