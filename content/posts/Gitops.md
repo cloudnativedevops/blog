@@ -20,7 +20,7 @@ The idea is to manage applications declaratively (something that should sound fa
 
 Imagine having a central git repository that contains all of your Kubernetes manifests, both for your own applications, along with any supporting services you need to install, such as [prometheus](https://prometheus.io/) for metrics, [fluentd](https://www.fluentd.org/) for logs, or [cert-manager](https://github.com/jetstack/cert-manager) for managing TLS certificates. This gives you a single place to look to see who deployed what and when, all tracked in the git commit history.
 
-Adding a new application to your clusters could be as simple as opening a pull-request to this central “configuration repo” with your Kubernetes manifests or Helm Charts for your new service. Once that PR is approved by your team and merged, a GitOps tool (like Flux or [Argo](https://argoproj.github.io/argo-cd/) could automatically apply that change from within the cluster.
+Adding a new application to your clusters can be as simple as opening a PR to this central “configuration repo” containing the Kubernetes manifests or Helm charts for your new service. Once that PR is approved by your team and merged, a GitOps tool (like Flux or [Argo](https://argoproj.github.io/argo-cd/) can automatically apply that change from within the cluster.
 
 If this sounds similar to a Puppet or Chef agent automatically installing a package across your fleet of Linux VMs when you push the change into your config repo, then you can see how the past is very much a part of the present.
 
