@@ -20,7 +20,9 @@ Although the term 'GitOps' itself is relatively new, the idea had been around fo
 
 The idea is to bring together the processes of _deploying code_ and _managing that code with version control_ (`git` being one of the more popular source control tools in use these days).
 
-Imagine having a central git repository that contains all of your Kubernetes manifests, both for your own applications, along with any supporting services you need to install, such as [prometheus](https://prometheus.io/) for metrics, [fluentd](https://www.fluentd.org/) for logs, or [cert-manager](https://github.com/jetstack/cert-manager) for managing TLS certificates. This gives you a single place to look to see who deployed what and when, all tracked in the git commit history.
+Instead of keeping your code in a Git repository and then running some command or process to manually deploy changes from it, when you do GitOps you are _automatically_ deploying whatever is at the head of that repo. So 'deployment', for you as a developer, means simply merging a pull request, and the automation does the rest.
+
+This means maintaining a single Git repository that contains all of your Kubernetes manifests, both for your own applications, along with any supporting services you need to install, such as [prometheus](https://prometheus.io/) for metrics, [fluentd](https://www.fluentd.org/) for logs, or [cert-manager](https://github.com/jetstack/cert-manager) for managing TLS certificates. Because everything is in one place, it's easy to manage and update (no more PRs across multiple repos to roll out a change), and there's a single audit trail that shows who changed what, when, and why.
 
 Adding a new application to your clusters can be as simple as opening a PR to this central “configuration repo” containing the Kubernetes manifests or Helm charts for your new service. Once that PR is approved by your team and merged, a GitOps tool (like Flux or [Argo](https://argoproj.github.io/argo-cd/)) can automatically apply that change from within the cluster.
 
