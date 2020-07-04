@@ -28,7 +28,9 @@ If you broaden the idea of a Git repo to include a container registry, you could
 
 For example, you could deploy the new image to a test cluster, which would automatically run acceptance tests, and assuming they succeed, the GitOps tool could tag the image with something like 'Ready for prod', and that in turn would trigger an update of the production cluster.
 
-If you needed to rebuild your entire Kubernetes cluster from scratch now you have everything you need in a single repo to recreate everything. Simply install your GitOps tool, point it at your central configuration repo, and it will automatically reinstall everything using the last deployed versions.
+A common problem with Kubernetes is how to recreate the 'state of the cluster'. It's not that you actually often _need_ to rebuild a cluster from scratch, but the point is that in a declarative infrastructure there should be an automatable _way_ to do that. Otherwise, recovering from disasters is a complex and error-prone manual process which may rely on information you no longer have available.
+
+ The centralized config repo and the GitOps tooling offers a way to deal with that. Simply install your GitOps tool, point it at your repo, and it will automatically reinstall everything using the last deployed versions, bringing the cluster back to a state where it's ready for production. It's rare to be able to make this _entirely_ automated, because there is usually also some data in the system, such as your user database, or uploaded assets, for example. But using the GitOps discipline certainly helps with everything that _can_ be managed declaratively, leaving you more time to deal with the stuff that needs human intervention.
 
 GitOps continues the idea of automating deployments, and defining your infrastructure in code. Using a central configuration repository gives you a source of truth for all of your applications and allows for teams to collaborate and coordinate changes.
 
