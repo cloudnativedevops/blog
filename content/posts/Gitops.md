@@ -1,6 +1,6 @@
 ---
 title: "What is GitOps?"
-date: 2020-07-05T12:00:00Z
+date: 2020-07-04T12:00:00Z
 description: "It began with shell scripts, Makefiles, Dockerfiles, Jenkinsfiles, building reusable images with Packer, infrastructure-as-code tools like Terraform, and configuration management tools such as Ansible, Puppet, and Chef. Now GitOps brings some new tools for managing containerized applications in Kubernetes clusters."
 ---
 
