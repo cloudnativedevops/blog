@@ -6,7 +6,7 @@ description: "It began with shell scripts, Makefiles, Dockerfiles, Jenkinsfiles,
 
 Once you've wrapped your head around the basic concepts of Kubernetes, the next question that often comes to mind is “So how can I deploy my services onto this thing?” That means we need to talk about Continuous Integration/Continuous Deployment/Delivery (CI/CD) pipelines.
 
-Not only is Kuberentes a good system for keeping services running, it comes with a growing ecosystem of tools for managing deployments and can help improve the workflows of both software developers and cluster operators.
+Kubernetes itself is a great platform for running reliable services, but it also comes with a growing ecosystem of tools for managing deployments that can help improve the workflows of both software developers and cluster operators.
 
 As with almost everything, it is useful to look to the past to understand the present. Software engineers have certainly been running and deploying software long before Kubernetes, Docker, and cloud platforms ever existed. So what is new in a cloud-native world? 
 
