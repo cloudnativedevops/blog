@@ -24,7 +24,9 @@ Adding a new application to your clusters can be as simple as opening a PR to th
 
 If this sounds similar to a Puppet or Chef agent automatically installing a package across your fleet of Linux VMs when you push the change into your config repo, then you can see how the past is very much a part of the present.
 
-Another popular workflow that GitOps tools can provide is to automatically deploy upgrades when a new container image is pushed to your container image registry. Imagine a testing cluster where your GitOps tool could automatically deploy new container images of your app as soon as they are built and published to the registry, rather than having a developer do a separate deployment to promote the new image. The GitOps tool would automatically make a commit back to the central configuration repo when the deploy is finished setting the newly applied container tag.
+If you broaden the idea of a Git repo to include a container registry, you could imagine a GitOps workflow where pushing a new container image to the registry triggers an automated deployment of that image. Instead of having to build the image, push it, and then deploy the change, just pushing the image is enough.
+
+For example, you could deploy the new image to a test cluster, which would automatically run acceptance tests, and assuming they succeed, the GitOps tool could tag the image with something like 'Ready for prod', and that in turn would trigger an update of the production cluster.
 
 If you needed to rebuild your entire Kubernetes cluster from scratch now you have everything you need in a single repo to recreate everything. Simply install your GitOps tool, point it at your central configuration repo, and it will automatically reinstall everything using the last deployed versions.
 
