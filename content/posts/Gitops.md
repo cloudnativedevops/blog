@@ -8,7 +8,7 @@ Once you've wrapped your head around the basic concepts of Kubernetes, the next 
 
 Kubernetes itself is a great platform for running reliable services, but it also comes with a growing ecosystem of tools for managing deployments that can help improve the workflows of both software developers and cluster operators.
 
-As with almost everything, it is useful to look to the past to understand the present. Software engineers have certainly been running and deploying software long before Kubernetes, Docker, and cloud platforms ever existed. So what is new in a cloud-native world? 
+Software engineers have certainly been running and deploying software long before Kubernetes, Docker, and cloud platforms ever existed. So what's different about the cloud native world? 
 
 “GitOps” is a new term that comes up often when talking about application deployment in Kubernetes and is the latest newcomer to the conversation about how to manage changes to applications over time. Ian Miell is working on an upcoming book specifically about GitOps and made this helpful diagram called [“The GitOps Family Tree”](https://twitter.com/ianmiell/status/1278330015529254912).
 
