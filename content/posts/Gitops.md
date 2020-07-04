@@ -16,7 +16,7 @@ Software engineers have certainly been running and deploying software long befor
 
 Using Ian’s Tree we see that GitOps is a continuation of the story that started out with shell scripts, Makefiles, Dockerfiles, Jenkinsfiles, building reusable images with Packer, infrastructure-as-code tools like Terraform, and configuration management tools such as Ansible, Puppet, and Chef. GitOps brings some new tools to this ecosystem for managing containerized applications in Kubernetes clusters.
 
-Weaveworks (the hardworking folks behind [Flux](https://github.com/fluxcd/flux) and [eksctl](https://github.com/weaveworks/eksctl)) have been talking about GitOps for some time now, and have a useful explanation of the term [here](https://www.weave.works/technologies/gitops/). 
+Although the term 'GitOps' itself is relatively new, the idea had been around for a long time before Weaveworks (the folks behind [Flux](https://github.com/fluxcd/flux) and [eksctl](https://github.com/weaveworks/eksctl)) [coined a word for it](https://www.weave.works/technologies/gitops/). 
 
 The idea is to manage applications declaratively (something that should sound familiar when talking about Kubernetes manifests) and automatically applying changes using code that is stored in a central repository (`git` being one of the more popular source control tools in use these days).
 
