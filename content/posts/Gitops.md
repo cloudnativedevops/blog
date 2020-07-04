@@ -12,6 +12,8 @@ Software engineers have certainly been running and deploying software long befor
 
 “GitOps” is the latest newcomer to the conversation about how to manage changes to applications over time. Ian Miell is working on an upcoming book specifically about GitOps and made this helpful diagram called [“The GitOps Family Tree”](https://twitter.com/ianmiell/status/1278330015529254912).
 
+{{% img-responsive "/static/img/gitops-tree.jpeg" %}}
+
 Using Ian’s Tree we see that GitOps is a continuation of the story that started out with shell scripts, Makefiles, Dockerfiles, Jenkinsfiles, building reusable images with Packer, infrastructure-as-code tools like Terraform, and configuration management tools such as Ansible, Puppet, and Chef. GitOps brings some new tools to this ecosystem for managing containerized applications in Kubernetes clusters.
 
 Weaveworks (the hardworking folks behind [Flux](https://github.com/fluxcd/flux) and [eksctl](https://github.com/weaveworks/eksctl)) have been talking about GitOps for some time now, and have a useful explanation of the term [here](https://www.weave.works/technologies/gitops/). 
