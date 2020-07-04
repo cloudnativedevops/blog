@@ -18,7 +18,7 @@ GitOps is a new addition to the family that includes shell scripts, Makefiles, D
 
 Although the term 'GitOps' itself is relatively new, the idea had been around for a long time before Weaveworks (the folks behind [Flux](https://github.com/fluxcd/flux) and [eksctl](https://github.com/weaveworks/eksctl)) [coined a word for it](https://www.weave.works/technologies/gitops/). 
 
-The idea is to manage applications declaratively (something that should sound familiar when talking about Kubernetes manifests) and automatically applying changes using code that is stored in a central repository (`git` being one of the more popular source control tools in use these days).
+The idea is to bring together the processes of _deploying code_ and _managing that code with version control_ (`git` being one of the more popular source control tools in use these days).
 
 Imagine having a central git repository that contains all of your Kubernetes manifests, both for your own applications, along with any supporting services you need to install, such as [prometheus](https://prometheus.io/) for metrics, [fluentd](https://www.fluentd.org/) for logs, or [cert-manager](https://github.com/jetstack/cert-manager) for managing TLS certificates. This gives you a single place to look to see who deployed what and when, all tracked in the git commit history.
 
