@@ -14,7 +14,7 @@ Software engineers have certainly been running and deploying software long befor
 
 {{% img-responsive "/static/img/gitops-tree.jpeg" %}}
 
-Using Ian’s Tree we see that GitOps is a continuation of the story that started out with shell scripts, Makefiles, Dockerfiles, Jenkinsfiles, building reusable images with Packer, infrastructure-as-code tools like Terraform, and configuration management tools such as Ansible, Puppet, and Chef. GitOps brings some new tools to this ecosystem for managing containerized applications in Kubernetes clusters.
+GitOps is a new addition to the family that includes shell scripts, Makefiles, Dockerfiles, Jenkinsfiles, building reusable images with Packer, infrastructure-as-code tools like Terraform, and configuration management tools such as Ansible, Puppet, and Chef. And GitOps brings some new tools to this ecosystem for managing containerized applications in Kubernetes clusters.
 
 Although the term 'GitOps' itself is relatively new, the idea had been around for a long time before Weaveworks (the folks behind [Flux](https://github.com/fluxcd/flux) and [eksctl](https://github.com/weaveworks/eksctl)) [coined a word for it](https://www.weave.works/technologies/gitops/). 
 
