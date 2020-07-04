@@ -32,7 +32,6 @@ A common problem with Kubernetes is how to recreate the 'state of the cluster'. 
 
  The centralized config repo and the GitOps tooling offers a way to deal with that. Simply install your GitOps tool, point it at your repo, and it will automatically reinstall everything using the last deployed versions, bringing the cluster back to a state where it's ready for production. It's rare to be able to make this _entirely_ automated, because there is usually also some data in the system, such as your user database, or uploaded assets, for example. But using the GitOps discipline certainly helps with everything that _can_ be managed declaratively, leaving you more time to deal with the stuff that needs human intervention.
 
-GitOps continues the idea of automating deployments, and defining your infrastructure in code. Using a central configuration repository gives you a source of truth for all of your applications and allows for teams to collaborate and coordinate changes.
 
 To learn more and get started with GitOps we recommend checking out Flux and Argo.  These are separate (but similar) GitOps tools for now with slight differences in functionality, but in November of 2019, the two teams [announced](https://www.weave.works/blog/argo-flux-join-forces) that they are going to collaborate on a single shared tool that will be called the [GitOps Engine](https://github.com/argoproj/gitops-engine). 
 
