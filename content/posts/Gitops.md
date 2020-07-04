@@ -22,7 +22,7 @@ Imagine having a central git repository that contains all of your Kubernetes man
 
 Adding a new application to your clusters can be as simple as opening a PR to this central “configuration repo” containing the Kubernetes manifests or Helm charts for your new service. Once that PR is approved by your team and merged, a GitOps tool (like Flux or [Argo](https://argoproj.github.io/argo-cd/) can automatically apply that change from within the cluster.
 
-If this sounds similar to a Puppet or Chef agent automatically installing a package across your fleet of Linux VMs when you push the change into your config repo, then you can see how the past is very much a part of the present.
+This is the same kind of workflow that many people use with traditional servers and config management tools like Puppet or Ansible. The configuration of every server is declaratively managed by code in a Git repo, and whatever is merged to that repo is automatically rolled out across the whole infrastructure. This is GitOps, and tools like Flux simply extend this pattern to include Kubernetes.
 
 If you broaden the idea of a Git repo to include a container registry, you could imagine a GitOps workflow where pushing a new container image to the registry triggers an automated deployment of that image. Instead of having to build the image, push it, and then deploy the change, just pushing the image is enough.
 
