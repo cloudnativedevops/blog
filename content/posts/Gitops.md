@@ -4,7 +4,7 @@ date: 2020-07-05T12:00:00Z
 description: "It began with shell scripts, Makefiles, Dockerfiles, Jenkinsfiles, building reusable images with Packer, infrastructure-as-code tools like Terraform, and configuration management tools such as Ansible, Puppet, and Chef. Now GitOps brings some new tools for managing containerized applications in Kubernetes clusters."
 ---
 
-It is difficult to talk about Kubernetes without also talking about Continuous Integration/Continuous Deployment/Delivery (CI/CD) pipelines. Once the overall concepts of Kubernetes sink in, the next question that often comes to mind is “So how can I deploy my services onto this thing?” And “Is this going to be better than my current CI/CD setup?” 
+Once you've wrapped your head around the basic concepts of Kubernetes, the next question that often comes to mind is “So how can I deploy my services onto this thing?” That means we need to talk about Continuous Integration/Continuous Deployment/Delivery (CI/CD) pipelines.
 
 Not only is Kuberentes a good system for keeping services running, it comes with a growing ecosystem of tools for managing deployments and can help improve the workflows of both software developers and cluster operators.
 
