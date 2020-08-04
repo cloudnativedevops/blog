@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes at Work with Katy Pedelty"
 date: 2020-08-04T10:17:16+01:00
-description: "Kubernetes is about solving real problems. We talk to 100% real software engineer Torie Joy-Warren about her experiences with k8s and cloud."
+description: "Developer Katy Pedelty talks to the Cloud Native DevOps blog about her Go and Kubernetes experiences. Not forgetting Sophie the dog."
 ---
 
 We recently interviewed software engineer [Torie Joy-Warren](/posts/kubernetes-at-work-torie-joy-warren/) about her experiences with Kubernetes and cloud. Here's the next post in our 'Kubernetes at Work' series: an interview with Seattle-based developer Katy Pedelty. Welcome, Katy!
@@ -68,7 +68,7 @@ I think for me the lesson is that some of this stuff is unlike what you may have
 
 So, I do have some thoughts on this from my work at Google and my proximity to the team that worked on developing a framework for service consumption.
 
-I think with K8s, there may be some stronger ways to utilize other APIs with services running in your container. GCP is a big-ass ecosystem, and it’s nice that it can all work independently, but for those organizations that are all-in or want to become so, API access and secrets, definitions, and metadata (like rate limiting) seem like they could have potential to require less setup, manual secret encryption and storage, and perhaps better change management, if customers run could run their applications in containers that are part of a larger, more regular framework.
+I think with K8s, there may be some stronger ways to utilize other APIs with services running in your container. GCP is a big-ass ecosystem, and it’s nice that it can all work independently, but for those organizations that are all-in or want to become so, API access and secrets, definitions, and metadata (like rate limiting) seem like they could have potential to require less setup, manual secret encryption and storage, and perhaps better change management, if customers could run their applications in containers that are part of a larger, more regular framework.
 
 Those ideas might just be stolen from that team, though. Personally when I use cloud providers, my frustrations tend to be knowing the “right way” to manage access, and feeling confident that I am not creating a big ol’ security risk because I don’t know the right way to talk to a service.
 
