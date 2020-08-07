@@ -18,7 +18,7 @@ I didn’t ever think of computer science as something I might be into until I g
 
 <strong>So, since this post is at least nominally about Kubernetes, and developers' real-life experiences with it behind the hype, let's turn to that. Real talk: are you now or have you ever been a Kuberneticist?</strong>
 
-I have truly very little experience with Kubernetes. I heard the word ALWAYS at Google; the team was in our org (sometimes) and it seemed, to me, a more highly prioritized product.
+I have truly very little experience with Kubernetes. I heard the word ALWAYS at Google; the team was in our org (sometimes) and it seemed, to me, a highly prioritized product.
 
 Since then I have had occasion to try to understand containers in Docker as well as K8s, and I have learned to dread moments where I might need to do something with the tool.
 
