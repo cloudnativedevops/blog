@@ -12,19 +12,19 @@ We recently interviewed software engineer [Torie Joy-Warren](/posts/kubernetes-a
 
 <strong>Hi, Katy! We really appreciate you dropping in to share your experiences with Kubernetes. What's your background in tech, and how did you get into development in the first place?</strong>
 
-I didn’t ever think of computer science as something I might be into until I got to college. Luckily at that point another student inspired me to try Electrical Engineering and Computer Science (cred: SWE), and it turned out that I absolutely loved coding. So my first experience with software development was fall of freshman year! (I had written some HTML and CSS in 4th grade to make my Neopets shop look cooler.)
+I didn’t ever think of computer science as something I might be into until I got to college. Luckily at that point another student inspired me to try Electrical Engineering and Computer Science (cred: SWE), and it turned out that I absolutely loved coding. So my first experience with software development was fall of freshman year! (I had also written some HTML and CSS in 4th grade to make my Neopets shop look cooler.)
 
 <!--more-->
 
 <strong>So, since this post is at least nominally about Kubernetes, and developers' real-life experiences with it behind the hype, let's turn to that. Real talk: are you now or have you ever been a Kuberneticist?</strong>
 
-I have truly very little experience with Kubernetes. I heard the word ALWAYS at Google; the team was in our org (sometimes) and it seemed, to me, a highly prioritized product.
+I have truly very little experience with Kubernetes. I heard the word ALWAYS at Google and it seemed a prioritized product.
 
 Since then I have had occasion to try to understand containers in Docker as well as K8s, and I have learned to dread moments where I might need to do something with the tool.
 
 I follow instructions from the Wiki by rote, and if there’s a problem I never know if I should finally dive in and learn the whole thing, or just get one-time help from a coworker. So far it’s always been the latter (often after a brief foray into docs), and when the same problem comes up in the future, it all happens again because none of it seems to stick in my brain.
 
-I have a Kubernetes publication that I am actually reading now, at long last, and I am tentatively hopeful that next time I need to use a container or container engine or nodes or clusters or whatever the heck all those things are, I might have some better context for what I’m looking at.
+I have a Kubernetes publication that I am actually reading now, at long last, and I am tentatively hopeful that next time I need to use a container or container engine or nodes or clusters or whatever the heck all those things are, I might have some better context for what I’m looking at. PS that publication is your book, thanks for that.
 
 <strong>We appreciate your candor. So, if this isn't a loaded question, which it is, what do you find most helpful about Kubernetes?</strong>
 
@@ -50,4 +50,4 @@ I think for me the lesson is that some of this stuff is unlike what you may have
 
 <strong>It was really great to talk with you, Katy. Thanks so much! Keep on crushing it, won't you?</strong>
 
-Thank you for having me! I sure will.
+Thank you for having me! I'll do my best!
