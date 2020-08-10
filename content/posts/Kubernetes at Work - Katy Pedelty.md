@@ -14,13 +14,15 @@ We recently interviewed software engineer [Torie Joy-Warren](/posts/kubernetes-a
 
 I didn’t ever think of computer science as something I might be into until I got to college. Luckily at that point another student inspired me to try Electrical Engineering and Computer Science (cred: SWE), and it turned out that I absolutely loved coding. So my first experience with software development was fall of freshman year! (I had also written some HTML and CSS in 4th grade to make my Neopets shop look cooler.)
 
+Since then, my experience has been 4 years of college, which was generally very positive, 7 years of full-time employment, and half a masters in CSE from UW. I’ve always preferred CS to EE, which bums me out just a little because that was even more male dominated at school, and I’d love to have had the chance to #represent.
+
+In my time in engineering, I’ve had moments of great epiphany, stress and frustration about deadlines, and interpersonal challenges. Oddly enough the greatest challenges to me since joining the workforce have, in my opinion, been bad management. I try not to let that color my experience of programming in general.
+
 <!--more-->
 
 <strong>So, since this post is at least nominally about Kubernetes, and developers' real-life experiences with it behind the hype, let's turn to that. Real talk: are you now or have you ever been a Kuberneticist?</strong>
 
-I have truly very little experience with Kubernetes. I heard the word ALWAYS at Google and it seemed a prioritized product.
-
-Since then I have had occasion to try to understand containers in Docker as well as K8s, and I have learned to dread moments where I might need to do something with the tool.
+I have truly very little experience with Kubernetes. I've had occasion to try to understand containers in Docker as well as K8s, and I have learned to dread moments where I might need to do something with the tool.
 
 I follow instructions from the Wiki by rote, and if there’s a problem I never know if I should finally dive in and learn the whole thing, or just get one-time help from a coworker. So far it’s always been the latter (often after a brief foray into docs), and when the same problem comes up in the future, it all happens again because none of it seems to stick in my brain.
 
@@ -47,6 +49,12 @@ When *I* have to do anything with Kubernetes, I can’t say I find it easy.
 <strong>How would you advise your younger self? For folks who are just getting started with cloud native tech, Go, and Kubernetes, how should they approach learning it?</strong>
 
 I think for me the lesson is that some of this stuff is unlike what you may have seen before. If you are not great at memorizing things, like me, probably the best way to start is to put in time up front to get a foundation on which to build your understanding, rather than relying on creating connections to your previous experiences.
+
+<strong>Sounds very sensible. What would you like to see change or improve in the Kubernetes world, from a developer's perspective?</strong>
+
+I think with K8s, there may be some stronger ways to utilize other APIs with services running in your container. For those organizations that are all-in or want to become so, API access and secrets, definitions, and metadata (like rate limiting) seem like they could have potential to require less setup, manual secret encryption and storage, and perhaps better change management, if customers could run their applications in containers that are part of a larger, more regular framework.
+
+Personally when I use cloud providers, my frustrations tend to be knowing the “right way” to manage access, and feeling confident that I am not creating a big ol’ security risk because I don’t know the right way to talk to a service.
 
 <strong>It was really great to talk with you, Katy. Thanks so much! Keep on crushing it, won't you?</strong>
 
